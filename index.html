@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Neopong – Politique de confidentialité / Privacy Policy</title>
+<style>
+  :root{--bg:#0a0c1a;--card:#12162b;--text:#e8eefc;--soft:#9fb0d8;--cyan:#40e0ff;--mag:#ff48dc}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--text);font:16px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+  main{max-width:760px;margin:0 auto;padding:32px 20px 64px}
+  h1{font-size:2rem;margin:0 0 4px;color:var(--cyan);letter-spacing:.04em}
+  h2{font-size:1.2rem;margin:32px 0 8px;color:var(--mag)}
+  p,li{color:var(--text)} li{margin:4px 0}
+  .soft{color:var(--soft);font-size:.92rem}
+  .card{background:var(--card);border:1px solid #232a4d;border-radius:12px;padding:16px 18px;margin:12px 0}
+  .lang{display:flex;gap:8px;margin:16px 0 8px}
+  .lang button{background:var(--card);color:var(--soft);border:1px solid #2c3463;border-radius:8px;padding:8px 18px;font:inherit;cursor:pointer}
+  .lang button.on{color:var(--cyan);border-color:var(--cyan);box-shadow:0 0 10px rgba(64,224,255,.35)}
+  a{color:var(--cyan)}
+  [data-l]{display:none} [data-l].on{display:block}
+</style>
+</head>
+<body>
+<main>
+<h1>NEOPONG</h1>
+<div class="lang">
+  <button id="bfr" class="on" onclick="setLang('fr')">Français</button>
+  <button id="ben" onclick="setLang('en')">English</button>
+</div>
+
+<!-- ============================== FRANÇAIS ============================== -->
+<div data-l="fr" class="on">
+<p class="soft">Politique de confidentialité – dernière mise à jour : 14 octobre 2026</p>
+<p>Cette politique explique quelles informations l'application mobile <strong>Neopong</strong> (identifiant Android <code>com.thoizon.neopong</code>) traite, pourquoi, et quels sont vos droits.
+En bref : <strong>aucun compte, aucune adresse e-mail, aucun numéro de téléphone</strong> ne vous est demandé.</p>
+
+<h2>1. Éditeur et contact</h2>
+<p>Éditeur : Thoizon (« nous »). Contact pour toute question relative à la vie privée : <a href="mailto:thoizon@gmail.com">thoizon@gmail.com</a>.</p>
+
+<h2>2. Données traitées</h2>
+<div class="card">
+<p><strong>a) Données stockées sur votre appareil uniquement</strong></p>
+<ul>
+<li>Votre pseudonyme de jeu (généré automatiquement, de type « Joueur1234 », modifiable), la langue, le niveau de difficulté, les réglages de son et de musique.</li>
+<li>Ces données restent sur votre téléphone et sont supprimées à la désinstallation de l'application.</li>
+</ul>
+</div>
+<div class="card">
+<p><strong>b) Multijoueur en ligne (uniquement si vous utilisez le mode « Humain »)</strong></p>
+<ul>
+<li><em>Service de mise en relation (Supabase)</em> : votre pseudonyme, un identifiant aléatoire de partie, le code de salon, votre région approximative (continent) et les messages techniques de connexion (WebRTC) sont envoyés à notre serveur Supabase afin de vous mettre en relation avec un autre joueur. Ces informations sont temporaires : les salons et messages de connexion sont supprimés automatiquement après environ 30 minutes.</li>
+<li><em>Localisation approximative</em> : pour chercher d'abord un joueur proche, l'application interroge le service <code>ipwho.is</code> qui déduit votre pays/continent à partir de votre adresse IP. Nous n'utilisons ni le GPS ni votre position précise, et nous ne conservons pas votre adresse IP.</li>
+<li><em>Connexion directe entre joueurs (P2P)</em> : la partie se joue en connexion directe (WebRTC) avec l'autre joueur, avec l'aide d'un serveur STUN de Google. <strong>Votre adresse IP peut être visible par l'autre joueur</strong> pendant la partie, comme dans tout jeu en connexion directe. Les échanges de jeu (position de raquette, actions) ne transitent pas par nos serveurs et ne sont pas enregistrés.</li>
+<li>Si vous partagez un code de partie privée avec un ami (bouton « Inviter un ami »), le partage se fait via les applications de votre choix ; nous n'avons pas accès à ce partage.</li>
+</ul>
+</div>
+<div class="card">
+<p><strong>c) Publicité (Google AdMob)</strong></p>
+<ul>
+<li>L'application affiche un bandeau publicitaire fourni par Google AdMob. Google peut collecter et utiliser l'identifiant publicitaire de votre appareil, votre adresse IP, des informations sur l'appareil et sur l'usage de l'application afin d'afficher des publicités, mesurer leur performance et prévenir la fraude.</li>
+<li>Vous pouvez réinitialiser ou désactiver l'identifiant publicitaire et la personnalisation des annonces dans les paramètres Android (Paramètres &gt; Google &gt; Annonces).</li>
+<li>Plus d'informations : <a href="https://policies.google.com/technologies/partner-sites">comment Google utilise les données</a> · <a href="https://policies.google.com/privacy">règles de confidentialité de Google</a>.</li>
+</ul>
+</div>
+<div class="card">
+<p><strong>d) Mises à jour Google Play</strong></p>
+<ul><li>L'application utilise l'API de mises à jour de Google Play pour vous proposer les nouvelles versions. Ce service est fourni par Google Play et soumis à ses propres règles.</li></ul>
+</div>
+
+<h2>3. Ce que nous ne faisons pas</h2>
+<ul>
+<li>Nous ne vous demandons aucun compte, e-mail, contact, photo, micro ou position précise.</li>
+<li>Nous ne vendons pas vos données et ne les utilisons pas pour du profilage.</li>
+<li>Nous ne créons pas de messagerie : il n'y a pas de chat entre joueurs.</li>
+</ul>
+
+<h2>4. Bases légales (RGPD)</h2>
+<p>Le fonctionnement du multijoueur repose sur l'exécution du service que vous demandez (art. 6.1.b). La publicité repose, selon votre région, sur votre consentement ou sur l'intérêt légitime, via les mécanismes de Google.</p>
+
+<h2>5. Durée de conservation</h2>
+<p>Données locales : jusqu'à la désinstallation. Données de mise en relation : environ 30 minutes maximum. Les données traitées par Google (publicité, Google Play) obéissent aux règles de Google.</p>
+
+<h2>6. Vos droits</h2>
+<p>Conformément au RGPD, vous pouvez demander l'accès, la rectification ou l'effacement de vos données, vous opposer à leur traitement ou en demander la limitation et la portabilité, en nous écrivant à <a href="mailto:thoizon@gmail.com">thoizon@gmail.com</a>. Comme nous ne conservons pas de compte, nous ne pouvons agir que sur les données que vous nous indiquez (par ex. votre pseudonyme). Vous pouvez aussi introduire une réclamation auprès de votre autorité de protection des données (en France : la CNIL, <a href="https://www.cnil.fr">cnil.fr</a>).</p>
+
+<h2>7. Enfants</h2>
+<p>Neopong n'est pas destiné spécifiquement aux enfants de moins de 13 ans et nous ne collectons pas sciemment de données personnelles les concernant. Les parents peuvent nous contacter pour toute question.</p>
+
+<h2>8. Sécurité</h2>
+<p>Les échanges avec nos services utilisent des connexions chiffrées (HTTPS). Aucun système n'étant totalement infaillible, nous ne pouvons garantir une sécurité absolue.</p>
+
+<h2>9. Modifications</h2>
+<p>Nous pouvons mettre à jour cette politique ; la date de dernière mise à jour est indiquée en haut de la page.</p>
+</div>
+
+<!-- ============================== ENGLISH ============================== -->
+<div data-l="en">
+<p class="soft">Privacy Policy – last updated: October 14, 2026</p>
+<p>This policy explains what information the <strong>Neopong</strong> mobile app (Android ID <code>com.thoizon.neopong</code>) processes, why, and what your rights are.
+In short: <strong>no account, e-mail address or phone number</strong> is required.</p>
+
+<h2>1. Publisher and contact</h2>
+<p>Publisher: Thoizon ("we"). Privacy contact: <a href="mailto:thoizon@gmail.com">thoizon@gmail.com</a>.</p>
+
+<h2>2. Data processed</h2>
+<div class="card">
+<p><strong>a) Data stored on your device only</strong></p>
+<ul>
+<li>Your player nickname (automatically generated, like "Joueur1234", editable), language, difficulty level, sound and music settings.</li>
+<li>This data stays on your phone and is deleted when you uninstall the app.</li>
+</ul>
+</div>
+<div class="card">
+<p><strong>b) Online multiplayer (only if you use the "Human" mode)</strong></p>
+<ul>
+<li><em>Matchmaking service (Supabase)</em>: your nickname, a random game identifier, the room code, your approximate region (continent) and technical connection messages (WebRTC) are sent to our Supabase server to match you with another player. This information is temporary: rooms and connection messages are automatically deleted after about 30 minutes.</li>
+<li><em>Approximate location</em>: to look for a nearby player first, the app queries the <code>ipwho.is</code> service, which infers your country/continent from your IP address. We do not use GPS or your precise location, and we do not store your IP address.</li>
+<li><em>Direct player-to-player connection (P2P)</em>: the match is played over a direct connection (WebRTC) with the other player, using a Google STUN server. <strong>Your IP address may be visible to the other player</strong> during the match, as in any direct-connection game. Gameplay data (paddle position, actions) does not go through our servers and is not recorded.</li>
+<li>If you share a private game code with a friend ("Invite a friend" button), sharing is done through the apps of your choice; we have no access to it.</li>
+</ul>
+</div>
+<div class="card">
+<p><strong>c) Advertising (Google AdMob)</strong></p>
+<ul>
+<li>The app shows a banner ad provided by Google AdMob. Google may collect and use your device's advertising ID, IP address, device information and app usage data to serve ads, measure their performance and prevent fraud.</li>
+<li>You can reset or opt out of the advertising ID and ad personalization in Android settings (Settings &gt; Google &gt; Ads).</li>
+<li>More information: <a href="https://policies.google.com/technologies/partner-sites">how Google uses data</a> · <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</li>
+</ul>
+</div>
+<div class="card">
+<p><strong>d) Google Play updates</strong></p>
+<ul><li>The app uses the Google Play in-app updates API to offer new versions. This service is provided by Google Play and subject to its own policies.</li></ul>
+</div>
+
+<h2>3. What we do not do</h2>
+<ul>
+<li>We do not ask for any account, e-mail, contacts, photos, microphone access or precise location.</li>
+<li>We do not sell your data or use it for profiling.</li>
+<li>There is no chat: players cannot send each other messages.</li>
+</ul>
+
+<h2>4. Legal basis (GDPR)</h2>
+<p>Multiplayer operation relies on performing the service you request (Art. 6(1)(b)). Advertising relies, depending on your region, on your consent or on legitimate interest, through Google's mechanisms.</p>
+
+<h2>5. Retention</h2>
+<p>Local data: until uninstall. Matchmaking data: about 30 minutes at most. Data processed by Google (advertising, Google Play) follows Google's policies.</p>
+
+<h2>6. Your rights</h2>
+<p>Under the GDPR you may request access, rectification or erasure of your data, object to or restrict its processing, and request portability, by writing to <a href="mailto:thoizon@gmail.com">thoizon@gmail.com</a>. Since we keep no account, we can only act on data you tell us about (e.g. your nickname). You may also lodge a complaint with your data protection authority.</p>
+
+<h2>7. Children</h2>
+<p>Neopong is not specifically directed at children under 13 and we do not knowingly collect their personal data. Parents may contact us with any question.</p>
+
+<h2>8. Security</h2>
+<p>Communication with our services uses encrypted connections (HTTPS). No system is perfectly secure, so we cannot guarantee absolute security.</p>
+
+<h2>9. Changes</h2>
+<p>We may update this policy; the last-updated date is shown at the top of the page.</p>
+</div>
+</main>
+<script>
+function setLang(l){
+  document.querySelectorAll('[data-l]').forEach(function(e){e.classList.toggle('on',e.dataset.l===l)});
+  document.getElementById('bfr').classList.toggle('on',l==='fr');
+  document.getElementById('ben').classList.toggle('on',l==='en');
+  document.documentElement.lang=l;
+  try{history.replaceState(null,'','#'+l)}catch(e){}
+}
+var h=(location.hash||'').replace('#','');
+if(h==='en'||h==='fr')setLang(h);
+else if((navigator.language||'').toLowerCase().indexOf('fr')!==0)setLang('en');
+</script>
+</body>
+</html>
